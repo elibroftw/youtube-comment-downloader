@@ -12,11 +12,6 @@ pip install git+https://github.com/elibroftw/youtube-comment-downloader.git
 
 ## Usage
 
-```py
-import youtube_comment_downloader
-# TODO
-```
-
 ```sh
 $ youtube-comment-downloader --help
 usage: youtube-comment-downloader [--help] [--youtubeid YOUTUBEID] [--url URL] [--output OUTPUT] [--limit LIMIT] [--language LANGUAGE] [--sort SORT]
