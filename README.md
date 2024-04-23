@@ -1,22 +1,23 @@
-# youtube-comment-downloader
+# Youtube Comment Downloader
+
 Simple script for downloading Youtube comments without using the Youtube API. The output is in line delimited JSON.
 
-### Installation
+## Installation
 
-Preferably inside a [python virtual environment](https://virtualenv.pypa.io/en/latest/) install this package via:
-
-```
-pip install youtube-comment-downloader
+```sh
+pip install git+https://github.com/elibroftw/youtube-comment-downloader.git
 ```
 
-Or directly from the GitHub repository:
+[//]: # "pip install youtube-comment-downloader"
 
-```
-pip install https://github.com/egbertbouman/youtube-comment-downloader/archive/master.zip
+## Usage
+
+```py
+import youtube_comment_downloader
+# TODO
 ```
 
-### Usage as command-line interface
-```
+```sh
 $ youtube-comment-downloader --help
 usage: youtube-comment-downloader [--help] [--youtubeid YOUTUBEID] [--url URL] [--output OUTPUT] [--limit LIMIT] [--language LANGUAGE] [--sort SORT]
 
@@ -34,21 +35,23 @@ optional arguments:
 ```
 
 For example:
-```
+
+```sh
 youtube-comment-downloader --url https://www.youtube.com/watch?v=ScMzIvxBSi4 --output ScMzIvxBSi4.json
 ```
-or using the Youtube ID:
-```
+
+or using the youtube ID:
+
+```sh
 youtube-comment-downloader --youtubeid ScMzIvxBSi4 --output ScMzIvxBSi4.json
 ```
 
 For Youtube IDs starting with - (dash) you will need to run the script with:
 `-y=idwithdash` or `--youtubeid=idwithdash`
 
+## Usage as library
 
-### Usage as library
 You can also use this script as a library. For instance, if you want to print out the 10 most popular comments for a particular Youtube video you can do the following:
-
 
 ```python
 from itertools import islice
